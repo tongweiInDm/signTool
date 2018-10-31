@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.tw.tools.sign.MainActivity">
 
-    <Button
-        android:id="@+id/btn_get_sign_by_apk"
+    <EditText
+        android:id="@+id/edit_text_cer_content"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:text="从手机已安装应用获取签名" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="left|top"
+        android:hint="这里输入certification.pem的内容"
+        android:inputType="textMultiLine" />
 
     <Button
-        android:id="@+id/btn_get_apk_sign_by_pem"
+        android:id="@+id/btn_get_sign_md5"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:text="从certificate.pem文件内容获取签名" />
+        android:text="获取签名md5" />
+
+    <EditText
+        android:id="@+id/edit_text_sign_md5"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="这里展示签名md5" />
 
 </LinearLayout>
